@@ -1,0 +1,42 @@
+[
+  {
+    "Code Name": "A030129XX_07583.jpg",
+    "Name": "seupagetimyeon",
+    "W": "0.448148148148148",
+    "H": "0.23641975308642",
+    "File Format": "jpg",
+    "Cat 1": "03",
+    "Cat 2": "01",
+    "Cat 3": "29",
+    "Cat 4": "xx",
+    "Annotation Type": "binding",
+    "Point(x,y)": "0.259465020576132,0.615123456790123",
+    "Label": "0",
+    "Serving Size": "xx",
+    "Camera Angle": "xx",
+    "Cardinal Angle": "xx",
+    "Color of Container": "xx",
+    "Material of Container": "xx",
+    "Illuminance": "xx"
+  },
+  {
+    "Code Name": "A030129XX_07583.jpg",
+    "Name": "seupagetimyeon",
+    "W": "0.723868312757202",
+    "H": "0.382098765432099",
+    "File Format": "jpg",
+    "Cat 1": "03",
+    "Cat 2": "01",
+    "Cat 3": "29",
+    "Cat 4": "xx",
+    "Annotation Type": "binding",
+    "Point(x,y)": "0.638065843621399,0.808950617283951",
+    "Label": "0",
+    "Serving Size": "xx",
+    "Camera Angle": "xx",
+    "Cardinal Angle": "xx",
+    "Color of Container": "xx",
+    "Material of Container": "xx",
+    "Illuminance": "xx"
+  }
+]
