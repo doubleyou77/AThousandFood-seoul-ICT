@@ -1,0 +1,16 @@
+materials = {
+    "bean sprouts":"콩나물",
+    "beef":"쇠고기",
+    "chicken":"닭고기",
+    "egg":"달걀",
+    "fork":"돼지고기",
+    "garlic":"마늘",
+    "green onion":"파",
+    "kimchi":"김치",
+    "onion":"양파",
+    "photato":"감자",
+    "spam":"스팸"
+}
+
+def engToKor(eng):
+    return materials[eng]
