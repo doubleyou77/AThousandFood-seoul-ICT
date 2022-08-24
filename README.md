@@ -4,6 +4,9 @@ AI 시각과정
 ### 천개의 식재료
 인공지능으로 식재료를 판단하여 레시피를 추천해보자
 
+### 인식 가능한 데이터
+>static/models/data.json
+
 ### 문서
 https://www.notion.so/b1e37b0dcd6c4b37834847265075b4e9
 
