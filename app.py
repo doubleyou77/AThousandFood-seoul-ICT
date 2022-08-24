@@ -37,7 +37,7 @@ def ai():
     for name in results_name:
         results_recipe.append(Crawling(engToKor(name)))
     
-    
+     
     return render_template("result.html", image_path=img, materials=results_name, recipes=results_recipe )
 
 if __name__ == "__main__":
