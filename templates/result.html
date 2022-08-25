@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>실행결과</title>
 </head>
 <body>
 
 <img src="{{ url_for('static', filename='output/'+image_path) }}">
+<h1>해당 식재료에 대한 추천 레시피</h1><br>
 {% for material in materials %}
-    <h1>{{ material }}</h1>
+    <h2>{{ material }}</h2>
     {% for recipe in recipes[materials.index(material)] %}
         {{ recipe }}<br>
     {% endfor %}
 {% endfor %}
 </body>
 </html>
-<!-- materials=results_name, recipes=results_recipe -->
