@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  display:flex;
+  height: 100vh;
+  width: 45%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+
+.inWrapper {
+  display: flex;
+  height: 95%;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imageForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageForm .uploadImage {
+  display: flex;
+  width: 78%;
+  height: 30px;
+  border: 1px solid #dddddd;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.imageForm .help {
+  display: flex;
+  align-items: center;
+}
+
+.imageForm label {
+  display: flex;
+  padding: 10px 20px;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #999999;
+  cursor: pointer;
+  height: 40%;
+  margin: 10px 10px;
+  font-weight: 700;
+}
+
+b {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  background-color: rgb(135, 135, 135);
+  color: #fff;
+  margin-top: 2px;
+  margin-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+b:hover .tooltip {
+  visibility: visible;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 15%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip .detectDataset {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.tooltip ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.tooltip li {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.imageForm .imageInput[type="file"] {
+  position: flex;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+.imageForm .imageSubmit {
+  width: 220px;
+  font-size: 25pt;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  border-radius: 15px;
+  border-color: #2E64FE;
+  cursor: pointer;
+  background-color: #2E64FE;
+}

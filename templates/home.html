@@ -2,27 +2,54 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>식재료 객체 인식</title>
+    <title>천개의 식재료</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"> -->
+    <link rel="stylesheet" href="../static/css/home.css">
 </head>
 <body>
-<h1>식재료 객체 인식</h1><br>
-<form action="/ai" method="post" enctype="multipart/form-data">
-    <input name="image" type="file">
-    <button>전송</button>
-</form>
-<h2>인식 가능한 데이터</h2><br>
-{<br>
-    "bean sprouts":"콩나물",<br>
-    "beef":"쇠고기",<br>
-    "chicken":"닭고기",<br>
-    "egg":"달걀",<br>
-    "fork":"돼지고기",<br>
-    "garlic":"마늘",<br>
-    "green onion":"파",<br>
-    "kimchi":"김치",<br>
-    "onion":"양파",<br>
-    "photato":"감자",<br>
-    "spam":"스팸"<br>
-}<br>
+  <div class="container">
+    <div class="wrapper">
+      <div class="inWrapper">
+        <div class="title">천개의 식재료</div>
+        <form class="imageForm" action="/ai" method="post" enctype="multipart/form-data">
+          <input class="uploadImage" value="이미지" placeholder="이미지" readonly>
+          <div class="help">
+            <label for="imageInput">파일찾기</label> 
+            <b title="Lorem ipsum">?
+              <div class="tooltip">
+                <div class="detectDataset">인식 가능한 데이터</div>
+                <ul>
+                  <li>bean sprouts : 콩나물</li>
+                  <li>beef : 쇠고기</li>
+                  <li>chicken : 닭고기</li>
+                  <li>egg : 달걀</li>
+                  <li>fork : 돼지고기</li>
+                  <li>garlic : 마늘</li>
+                  <li>green onion : 파</li>
+                  <li>kimchi : 김치</li>
+                  <li>onion : 양파</li>
+                  <li>photato : 감자(오타)</li>
+                  <li>spam : 스팸</li>
+                </ul>
+              </div> 
+            </b>
+          </div>
+          <input class="imageInput" id="imageInput" name="image" type="file">
+          <button class="imageSubmit">업로드</button>
+        </form>       
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let uploadImage = document.querySelector('.uploadImage');
+
+    document.getElementById('imageInput').onchange = () => {
+      let fileName = document.getElementById('imageInput').value;
+      fileName = fileName.split('\\').at(-1);
+      console.log(fileName);
+      uploadImage.value = fileName;
+    }
+  </script>
 </body>
 </html>
