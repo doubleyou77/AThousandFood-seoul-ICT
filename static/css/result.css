@@ -1,0 +1,21 @@
+.resultImage {
+  display: flex;
+  width: 50%;
+}
+
+.recipe {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
+.slideMenu {
+  display: flex;
+  height: 30vh;
+  width: 50%;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+}

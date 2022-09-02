@@ -2,17 +2,28 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>실행결과</title>
+    <title>천개의 식재료</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+    <link rel="stylesheet" href="../static/css/layer.css">
+    <link rel="stylesheet" href="../static/css/result.css">
 </head>
 <body>
-
-<img src="{{ url_for('static', filename='output/'+image_path) }}">
-<h1>해당 식재료에 대한 추천 레시피</h1><br>
-{% for material in materials %}
-    <h2>{{ material }}</h2>
-    {% for recipe in recipes[materials.index(material)] %}
-        {{ recipe }}<br>
-    {% endfor %}
-{% endfor %}
+    <div class="container">
+        <div class="wrapper">
+            <div class="inWrapper">
+                <img class="resultImage" src="{{ url_for('static', filename='output/'+image_path) }}">
+                <div class="recipe">해당 식재료에 대한 추천 레시피</div>
+                <div class="slideMenu">
+                    {% for material in materials %}
+                            <div class="menuItem">
+                                <div class="recipeTitle">{{ material[0] }}</div>
+                                <a class="recipeUrl" href="https://www.10000recipe.com/{{ material[1] }}">레시피 보러가기</a>
+                            </div>
+                    {% endfor %}          
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

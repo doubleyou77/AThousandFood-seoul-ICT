@@ -9,15 +9,15 @@ def Crawling(recipeUrl):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
 
-    recipe_title = []
-
+    recipe = []
     try:
         ul = soup.select_one('ul.rcp_m_list2')
-        titles = ul.select('div.common_sp_caption_tit')
+        title = ul.select_one('div.common_sp_caption_tit').getText()
+        recipeLocation = ul.select_one('div.common_sp_thumb a')['href']
 
-        for title in titles:
-            recipe_title.append(title.get_text())
+        recipe.append(title)
+        recipe.append(recipeLocation)
     except (AttributeError):
         return
     
-    return recipe_title
+    return recipe

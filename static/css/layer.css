@@ -1,0 +1,34 @@
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  display:flex;
+  height: 100vh;
+  width: 45%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+  
+.inWrapper {
+  display: flex;
+  height: 95%;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}

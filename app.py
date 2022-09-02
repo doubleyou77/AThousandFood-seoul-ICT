@@ -1,5 +1,6 @@
 import os
 import shutil
+from unittest import result
 from flask import Flask, render_template, request
 import torch
 import pandas as pd
@@ -37,8 +38,10 @@ def ai():
     for name in results_name:
         results_recipe.append(Crawling(engToKor(name)))
     
-     
-    return render_template("result.html", image_path=img, materials=results_name, recipes=results_recipe )
+    print(results_recipe)
+    
+    print(results_recipe)
+    return render_template("result.html", image_path=img, materials=results_recipe)
 
 if __name__ == "__main__":
     # 모델을 불러오는 부분
