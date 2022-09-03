@@ -1,4 +1,4 @@
-# a_thousand_food_seoul_ICT
+# AThousandFood-seoul-ICT
 ### 서울 ICT 이노베이션스퀘어 수업 프로젝트
 AI 시각과정
 ### 천개의 식재료
