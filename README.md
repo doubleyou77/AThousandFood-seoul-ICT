@@ -11,5 +11,5 @@ AI 시각과정
 https://www.notion.so/b1e37b0dcd6c4b37834847265075b4e9
 
 ### 실행 방법 
-> 라이브러리 설치 (pip freeze > requirements.txt)  
+> 라이브러리 설치 (pip install -r requirements.txt)  
 > python app.py
